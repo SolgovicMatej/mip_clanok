@@ -1,0 +1,128 @@
+% Metódy inžinierskej práce
+
+\documentclass[10pt,twoside,slovak,a4paper]{article}
+
+\usepackage[slovak]{babel}
+\usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{url} % príkaz \url na formátovanie URL
+\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+
+\usepackage{cite}
+%\usepackage{times}
+
+\pagestyle{headings}
+
+\title{Personalizácia užívateľského feedu prostredníctvom odporúčacích systémov na sociálnych sieťach\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2015/16, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
+
+\author{Matej Solgovič\\[2pt]
+	{\small Slovenská technická univerzita v Bratislave}\\
+	{\small Fakulta informatiky a informačných technológií}\\
+	{\small \texttt{xsolgovic@stuba.sk}}
+	}
+
+\date{\small 3. october 2024} % upravte
+
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\ldots
+Sociálne média vytvárajú obsah pre svojich používateľov na základe ich záujmov a interakcií. Personalizácia obsahu používateľov zvyšuje aktivitu používateľov odporúčaním relevantného obsahu, ako sú príspevky, reklamy atď... .V tomto článku sa pozrieme na to, akú úlohu zohrávajú odporúčacie systémy pri vytváraní personalizovaných  uzivatelskych feedov na sociálnych médiach. Ako ovplyvňujú to, aký obsah sa používateľom zobrazuje.
+
+Personalizácia kanálov používateľov na platformách sociálnych médií sa vo veľkej miere spolieha na pokročilé odporúčacie systémy. Tieto systémy uskutočňujú rozsiahly zber a analýzu údajov. Zhromažďovaním rôznorodých a veľkého množstva údajov o používateľoch, ako sú: demografické informácie, záujmy, metriky zapojenia, predchádzajúce interakcie, vzorce správania, údaje získané z obsahu vytvoreného používateľom, ako sú príspevky, komentáre a lajky, tieto údaje sa používajú na vytvorenie profilu správania používateľa, ktorý platformy využívajú na prispôsobenie odporúčaného obsahu. Neustálym zhromažďovaním a analyzovaním týchto údajov môžu odporúčacie systémy predvídať preferencie používateľov a pomáhať pri kurátorstve obsahu, ktorý je v zhode s tým, čomu sa používatelia v danom okamihu najviac venujú.
+
+Tieto systémy zohľadňujú nielen individuálne preferencie, ale aj všeobecné trendy a sociálne súvislosti. Odporúčacie systémy využívajú metódy, ako je kolaboratívne filtrovanie a filtrovanie na základe obsahu, na navrhovanie relevantného obsahu na základe preferencií používateľov a ich správania v minulosti s cieľom získať presnejšie návrhy obsahu. 
+\end{abstract}
+
+
+
+\section{Úvod}
+
+Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
+
+Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
+Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
+Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
+Záverečné poznámky prináša časť~\ref{zaver}.
+
+
+
+\section{Nejaká časť} \label{nejaka}
+
+Z obr.~\ref{f:rozhod} je všetko jasné. 
+
+\begin{figure*}[tbh]
+\centering
+%\includegraphics[scale=1.0]{diagram.pdf}
+Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
+\caption{Rozhodujúci argument.}
+\label{f:rozhod}
+\end{figure*}
+
+
+
+\section{Iná časť} \label{ina}
+
+Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
+
+Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
+
+
+\subsection{Nejaké vysvetlenie} \label{ina:nejake}
+
+Niekedy treba uviesť zoznam:
+
+\begin{itemize}
+\item jedna vec
+\item druhá vec
+	\begin{itemize}
+	\item x
+	\item y
+	\end{itemize}
+\end{itemize}
+
+Ten istý zoznam, len číslovaný:
+
+\begin{enumerate}
+\item jedna vec
+\item druhá vec
+	\begin{enumerate}
+	\item x
+	\item y
+	\end{enumerate}
+\end{enumerate}
+
+
+\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
+
+\paragraph{Veľmi dôležitá poznámka.}
+Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
+
+
+
+\section{Dôležitá časť} \label{dolezita}
+
+
+
+
+\section{Ešte dôležitejšia časť} \label{dolezitejsia}
+
+
+
+
+\section{Záver} \label{zaver} % prípadne iný variant názvu
+
+
+
+\acknowledgement{Ak niekomu chcete poďakovať\ldots}
+
+
+% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
+\bibliography{literatura}
+\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
+\end{document}
